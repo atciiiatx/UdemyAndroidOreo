@@ -1,4 +1,4 @@
-package com.hookbang.android.exampleapp;
+package com.hookbang.android.loginscreen;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,16 +9,17 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState)
-    {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
     public void clickFunction(View view)
     {
-        EditText nameEditText = (EditText) findViewById(R.id.nameEditText);
+        EditText userName = (EditText) findViewById(R.id.userNameEditText);
+        EditText password = (EditText) findViewById(R.id.passwordEditText);
         Log.i("Info", "Button pressed!");
-        Log.i("Values", nameEditText.getText().toString());
+        Log.i("Values", userName.getText().toString());
+        Log.i("Values", password.getText().toString());
     }
 }
