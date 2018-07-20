@@ -14,12 +14,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void clickFunction(View view)
+    public void login(View view)
     {
         EditText userName = (EditText) findViewById(R.id.userNameEditText);
         EditText password = (EditText) findViewById(R.id.passwordEditText);
         Log.i("Info", "Button pressed!");
-        Log.i("Values", userName.getText().toString());
-        Log.i("Values", password.getText().toString());
+        Log.i("Username", userName.getText().toString());
+        Log.i("Password", password.getText().toString());
     }
 }
